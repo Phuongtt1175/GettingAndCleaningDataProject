@@ -12,7 +12,14 @@ create one R script called run_analysis.R that does the following
 * Step 3. Uses descriptive activity names to name the activities in the data set
 * Step 4. Appropriately labels the data set with descriptive variable names
 * Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+* 
+#Please find the main code in run_analysis.
+R
+This script file contain function name run_analysis which will:
 
+1. Read Samsung data of Coursera Project
+2. Perform analysis tasks that required by course project
+3. return data set in step 5
 
 The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls
 and sources of delay in the transition from data collection to data analysis. The [Leek group](http://biostat.jhsph.edu/~jleek/) works with a large

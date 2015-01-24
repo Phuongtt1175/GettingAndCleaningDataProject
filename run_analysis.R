@@ -24,8 +24,9 @@ run_analysis <- function()
   X_DS <- X_DS[,varColIx]
   
   # 3 Uses descriptive activity names to name the activities in the data set
+  library(plyr)
   act_lb <- read.table("activity_labels.txt")
-  Y_DS <- merge(Y_DS,act_lb,by="V1")
+  Y_DS <- join(Y_DS,act_lb,by="V1")
   
   # 4 Appropriately labels the data set with descriptive variable names. 
   names(X_DS) <- feat[varColIx,2]
@@ -36,7 +37,7 @@ run_analysis <- function()
   # get subject list
   subj <- rbind(read.table("subject_train.txt"),read.table("subject_test.txt"))
   
-  AggDim <- list(subj[,1],Y_DS[,1])
+  AggDim <- list(subj[,1],Y_DS[,2])
   names(AggDim) <- c("subject","activity")
   
   final <- aggregate(X_DS,by=AggDim,FUN=mean,na.rm=TRUE)

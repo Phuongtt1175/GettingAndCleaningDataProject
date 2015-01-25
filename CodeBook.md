@@ -16,10 +16,11 @@ The script using following file as source:
 Transormation include 5 steps:
 
 ### Step 1: Merges the training and the test sets to create one data set.
-In this step, I use 'rbind()' to merge data 'X_test.txt' with 'X_train.txt' and 'y_test.txt' with 'y_train.txt' to create 2 new dataset that I call X_DS and Y_DS:
+In this step, I use `rbind()` to merge data `X_test.txt` with `X_train.txt` and `y_test.txt` with `y_train.txt` to create 2 new dataset that I call X_DS and Y_DS:
 * X_DS: merge X_test.txt and x_train.txt
 * Y_DS: merge y_test.txt and y_train.txt
 
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement
-In this step I remove all column in X_DS except column which columnname contain '"mean()"' or '"std()"'.
+In this step I remove all column in X_DS except column which columnname contain `"mean()"` or `"std()"`.
+
 Columname of X_DS get from features.txt

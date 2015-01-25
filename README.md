@@ -21,7 +21,8 @@ This script file contain function name run_analysis which will:
 3. return data set in step 5
 
 Note:
-To run this script, please make sure that following files are in your working directory:
+script in run_analysis.R use 2 library data.table and plyr, so make sure that you installed these packages.
+And to run this script, please make sure that following files are in your working directory:
 * X_test.txt
 * X_train.txt
 * y_train.txt

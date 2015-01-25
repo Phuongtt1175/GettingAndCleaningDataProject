@@ -39,3 +39,8 @@ this step will aggregate data of X_DS by activities and subject using `aggregate
 
 Activities is Y_DS (get description only - second variable)
 Subject get from `rbind()` `subject_train.txt` and  `subject_test.txt`
+
+## Output
+After perform 5 steps above, the output will be a data frame with 180 obs. and 68 variables
+
+2 first variables is subject and activities

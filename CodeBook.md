@@ -25,5 +25,17 @@ In this step I remove all column in X_DS except column which columnname contain 
 
 Columname of X_DS get from `features.txt`
 
-###Step 3. Uses descriptive activity names to name the activities in the data set
-This step will merge (join) dataset `Y_DS` with `activity_labels.txt` to get description for activiti ID in Y_DS
+### Step 3. Uses descriptive activity names to name the activities in the data set
+This step will merge (join) dataset `Y_DS` with `activity_labels.txt` to get description for activiti ID in Y_DS.
+
+This stepp will add a variable into Y_DS (which is label of first variable)
+
+### Step 4. Appropriately labels the data set with descriptive variable names
+In this step, we add names attribute for `X_DS` using `features.txt`
+
+### Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+this step will aggregate data of X_DS by activities and subject using `aggregate()` function
+
+Activities is Y_DS (get description only - second variable)
+Subject get from `rbind()` `subject_train.txt` and  `subject_test.txt`

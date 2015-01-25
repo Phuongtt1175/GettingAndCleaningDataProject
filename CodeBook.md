@@ -21,5 +21,4 @@ In this step, I use rbind() to merge data X_test.txt with x_train.txt and y_test
 * Y_DS: merge y_test.txt and y_train.txt
 
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement
-In this step I remove all column in X_DS except column which columnname contain "mean()" or "std()"
-Columname of X_DS get from features.txt
+In this step I remove all column in X_DS except column which columnname contain "mean()" or "std()".Columname of X_DS get from features.txt
